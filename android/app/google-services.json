@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "491709254852",
+    "project_id": "instaorder-329817",
+    "storage_bucket": "instaorder-329817.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491709254852:android:d28e025812c7668ad9cd91",
+        "android_client_info": {
+          "package_name": "com.hackthisfall.untitled"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491709254852-m0lcmkp1a31i33t3cihtcmuuf4ujhp5l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjTtdyJOrf0rErguFOLAMVnkllUnfa4qs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491709254852-m0lcmkp1a31i33t3cihtcmuuf4ujhp5l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
