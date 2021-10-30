@@ -27,6 +27,7 @@ class TopScreen extends StatelessWidget {
             Text(
               'Get served as an emperor, the food of your choice.',
               style: TextStyle(
+                color: Colors.white,
                 fontSize: 40,
                 fontWeight: FontWeight.bold,
               ),
@@ -35,7 +36,8 @@ class TopScreen extends StatelessWidget {
               padding: const EdgeInsets.only(right: 80, top: 20, bottom: 40),
               child: Text(
                 'Time is precious we know that get all types of food at your doorstep delivered in 30 min...',
-                style: TextStyle(fontWeight: FontWeight.w300),
+                style:
+                    TextStyle(fontWeight: FontWeight.w300, color: Colors.white),
               ),
             ),
             RaisedGradientButton(

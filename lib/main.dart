@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'My Tone',
+        title: 'InstaOrder',
         theme: ThemeData.dark(),
         debugShowCheckedModeBanner: false,
         initialRoute: TopScreen.id,

@@ -1,7 +1,5 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:untitled/components/categoryBox.dart';
-import 'package:untitled/components/promoBox.dart';
-import 'package:untitled/components/restaurants.dart';
 import 'package:untitled/screens/shopingCart.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:untitled/screens/topScreen.dart';
@@ -59,30 +57,36 @@ class _MenuScreenState extends State<MenuScreen> {
         ),
       ),
       body: SingleChildScrollView(
-          child: Column(children: [
+          child:
+              Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         Padding(
-          padding: const EdgeInsets.only(top: 10.0),
-          child: SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: CategoryBox1(),
+          padding: const EdgeInsets.only(left: 10.0, top: 10),
+          child: Text(
+            'Trending Restaurants',
+            style: TextStyle(
+                fontSize: 35, color: Colors.white, fontWeight: FontWeight.bold),
           ),
         ),
-        Padding(
-          padding: const EdgeInsets.only(top: 10.0),
-          child: SingleChildScrollView(
+        Container(
+          height: 300,
+          child: ListView.builder(
             scrollDirection: Axis.horizontal,
-            child: PromoBox(),
+            itemBuilder: (BuildContext context, int index) {
+              return ReusableCard(onPress: () {});
+            },
+            itemCount: 6,
           ),
         ),
-        Padding(
-          padding: const EdgeInsets.only(top: 10.0),
-          child: SingleChildScrollView(
+        Container(
+          height: 300,
+          child: ListView.builder(
             scrollDirection: Axis.horizontal,
-            child: Restaurant(),
+            itemBuilder: (BuildContext context, int index) {
+              return ReusableCard(onPress: () {});
+            },
+            itemCount: 6,
           ),
-        ),
-        ReusableCard(
-            colour: Colors.blue, cardchild: Text('hello'), onPress: () {})
+        )
       ])),
       floatingActionButton: FloatingActionButton(
         onPressed: () async {

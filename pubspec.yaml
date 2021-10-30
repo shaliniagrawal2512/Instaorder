@@ -29,6 +29,8 @@ dependencies:
   google_place: ^0.4.3
   flutter_rating_bar: ^4.0.0
   shared_preferences: ^2.0.8
+  google_api_headers: ^1.1.1
+  google_maps_webservice: ^0.0.19
   dependencies:
 
 dev_dependencies:
